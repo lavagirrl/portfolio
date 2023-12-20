@@ -146,4 +146,30 @@ body {
     .apresentacao__conteudo{
         width: auto;
     }
+
+    .apresentacao__imagem img {
+        max-width: 500px;
+        animation: flutuar 3s infinite;
+      }
+      
+      @keyframes flutuar {
+        0%,
+        100% {
+          /* Define a posição inicial e final da animação */
+          transform: translateY(0);
+        }
+        50% {
+          /* Define a posição do meio da animação */
+          transform: translateY(-20px);
+        }
+      }
+      
+      @keyframes fade-in {
+        0% {
+          opacity: 0; /* Começa completamente invisível */
+        }
+        100% {
+          opacity: 1; /* Termina completamente visível */
+        }
+      }
 }
